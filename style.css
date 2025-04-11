@@ -18,17 +18,24 @@ header {
     background-color: #0077b6;
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: sticky; /*Pode ser necessário 'top', 'left', 'right' ou 'bottom';*/
+    position: sticky;
+    /*Pode ser necessário 'top', 'left', 'right' ou 'bottom';*/
     top: 0;
 }
 
-header ul{
+header nav {
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+}
+
+header ul {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-header h1{
+header h1 {
     color: #ffffff;
 }
 
@@ -42,24 +49,37 @@ header a:hover {
     background-color: #023e8a;
 }
 
-#sobreMim a{
+#sobreMim a {
     color: blue;
 }
+
 section {
     /*margin-top: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;*/
-    height: 80vh;
+    height: auto;
+    width: auto;
     margin: 2rem;
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 4rem;
     padding: 1rem;
     /*border-width: 1px;
     border-style: solid;
     border-color: #000000;*/
     border: 1px solid #000000;
+    overflow: auto;
+    text-align: center;
+
+    img {
+        margin: auto;
+    }
 }
 
 p {
     margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
 }
