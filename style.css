@@ -1,3 +1,13 @@
+:root {
+    --cor-primaria: #0077b6;
+    --cor-secundaria: #023e8a;
+    --cor-fundo: #ffffff;
+    --cor-primaria-titulo: #ffffff;
+    --cor-primaria-texto: #000;
+    --cor-link: #85faf1;
+    --cor-bordas: #eee;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -15,13 +25,13 @@ h2 {
 }
 
 body h1{
-    background-color: #0077b6;
-    color: #ffffff;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
     margin: auto;
     text-align: center;
 }
 header {
-    background-color: #0077b6;
+    background-color: var(--cor-primaria);
     padding: 1rem 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -42,22 +52,22 @@ header ul {
 }
 
 header h1 {
-    color: #ffffff;
+    color: var(--cor-fundo);
 }
 
 header a {
-    color: #ffffff;
+    color: var(--cor-fundo);
     font-weight: 700;
     padding: 0.5rem 1rem;
 }
 
 header a:hover {
-    background-color: #023e8a;
+    background-color: var(--cor-secundaria);
     border-radius: 6px;
 }
 
 a {
-    color: rgb(133, 250, 241);
+    color: var(--cor-link);
 }
 a:hover{
     text-decoration: underline;  
@@ -79,9 +89,9 @@ section {
     border: 1px solid #000000;
     overflow: auto;
     text-align: center;
-    background-color: #0077b6;
+    background-color: var(--cor-primaria);
     border-radius: 10px;
-    color: #ffffff;
+    color: var(--cor-primaria-titulo);
 
     img {
         margin: auto;
@@ -100,7 +110,7 @@ p {
 #contato input[type="text"],
 input[type="email"],
 textarea {
-    background-color: #ffffff;
+    background-color: var(--cor-bordas);
 }
 
 form {
@@ -122,11 +132,12 @@ textarea {
     border-radius: 6px;
     padding: .25rem .75rem;
     resize: none;
+    color: var(--cor-primaria-texto);
 }
 
 input[type="submit"] {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--cor-bordas);
+    color: var(--cor-primaria-texto);
 }
 
 .card{
@@ -137,7 +148,7 @@ input[type="submit"] {
 
 .titulo{
     font-weight: bold;
-    color: #ffffff;
+    color: var(--cor-primaria-titulo);
     font-size: 1.3rem;
 }
 
