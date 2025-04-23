@@ -80,6 +80,7 @@ header a:hover {
 a {
     color: var(--cor-link);
 }
+
 a:hover{
     text-decoration: underline;  
 }
@@ -133,6 +134,7 @@ form {
 }
 
 footer {
+    color: var(--cor-primaria-texto);
     text-align: center;
     margin: auto;
 }
@@ -149,10 +151,6 @@ textarea {
 input[type="submit"] {
     background-color: var(--cor-bordas);
     color: var(--cor-primaria-texto);
-}
-
-footer {
-    color: var(--cor-primaria-texto)
 }
 
 .card{
