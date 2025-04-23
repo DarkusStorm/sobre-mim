@@ -8,8 +8,19 @@
     --cor-bordas: #eee;
 }
 
+[data-theme="dark"]{
+    --cor-primaria: #00214b;
+    --cor-secundaria: #023e8a;
+    --cor-fundo: #000;
+    --cor-primaria-titulo: #fff;
+    --cor-primaria-texto: #fff;
+    --cor-link: #85faf1;
+    --cor-bordas: #eee;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--cor-fundo);
 }
 
 h1 {
@@ -26,7 +37,7 @@ h2 {
 
 body h1{
     background-color: var(--cor-primaria);
-    color: var(--cor-fundo);
+    color: var(--cor-primaria-titulo);
     margin: auto;
     text-align: center;
 }
@@ -52,11 +63,11 @@ header ul {
 }
 
 header h1 {
-    color: var(--cor-fundo);
+    color: var(--cor-primaria-titulo);
 }
 
 header a {
-    color: var(--cor-fundo);
+    color: var(--cor-primaria-titulo);
     font-weight: 700;
     padding: 0.5rem 1rem;
 }
